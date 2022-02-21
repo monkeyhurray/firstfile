@@ -1,0 +1,65 @@
+body {
+  background-color: beige;
+}
+#title {
+  margin-left: 190px;
+}
+#first {
+  background-color: white;
+  position: relative;
+  width: 500px;
+  height: 850px;
+  margin-left: 60px;
+  margin-top: 60px;
+}
+#tomato,
+#teal,
+#burlywood,
+#thistle {
+  width: 200px;
+  height: 400px;
+}
+#tomato {
+  background-color: tomato;
+  position: absolute;
+}
+#teal {
+  background-color: teal;
+  position: absolute;
+  right: 0px;
+}
+#burlywood {
+  background-color: burlywood;
+  position: absolute;
+  bottom: 0px;
+}
+#thistle {
+  background-color: thistle;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+#first-content {
+  background-color: white;
+  width: 200px;
+  height: 150px;
+  margin-top: 50px;
+}
+#second-content {
+  background-color: white;
+  width: 200px;
+  height: 150px;
+  margin-top: 50px;
+}
+#third-content {
+  background-color: white;
+  width: 200px;
+  height: 150px;
+  margin-top: 50px;
+}
+#last-content {
+  background-color: white;
+  width: 200px;
+  height: 150px;
+  margin-top: 50px;
+}
