@@ -1,65 +1,84 @@
 body {
-  background-color: beige;
-}
-#title {
-  margin-left: 190px;
-}
-#first {
-  background-color: white;
-  position: relative;
-  width: 500px;
-  height: 850px;
-  margin-left: 60px;
-  margin-top: 60px;
-}
-#tomato,
-#teal,
-#burlywood,
-#thistle {
-  width: 200px;
-  height: 400px;
-}
-#tomato {
-  background-color: tomato;
-  position: absolute;
-}
-#teal {
-  background-color: teal;
-  position: absolute;
-  right: 0px;
-}
-#burlywood {
-  background-color: burlywood;
-  position: absolute;
-  bottom: 0px;
-}
-#thistle {
-  background-color: thistle;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-}
-#first-content {
-  background-color: white;
-  width: 200px;
-  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bbdefb;
   margin-top: 50px;
 }
-#second-content {
-  background-color: white;
-  width: 200px;
-  height: 150px;
-  margin-top: 50px;
+#circle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  animation: first 2s ease-in-out infinite;
+  margin-bottom: 100px;
 }
-#third-content {
+#one {
   background-color: white;
-  width: 200px;
-  height: 150px;
-  margin-top: 50px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
-#last-content {
+#two {
   background-color: white;
-  width: 200px;
-  height: 150px;
-  margin-top: 50px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+#three {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+@keyframes first {
+  0% {
+    transform: rotatez(0deg);
+  }
+  50% {
+    transform: rotatez(180deg);
+  }
+  100% {
+    transform: rotatez(360deg);
+  }
+}
+#volume {
+  width: 150px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -18px;
+}
+
+.bar {
+  width: 20px;
+  height: 110px;
+  background-color: white;
+  animation: sexy 1s linear infinite;
+}
+.bar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.bar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.bar:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.bar:last-child {
+  animation-delay: 0.4s;
+}
+@keyframes sexy {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0.9);
+  }
 }
